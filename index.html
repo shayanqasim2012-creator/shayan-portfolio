@@ -2,126 +2,126 @@
 <html>
 <head>
   <title>Shayan Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
     body {
       margin: 0;
       font-family: Arial;
-      background-color: #1e1e1e;
+      background: #0b0b0b;
       color: white;
-    }
-
-    nav {
-      background-color: #111;
-      padding: 15px;
       text-align: center;
     }
 
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      color: #00bfff;
-    }
-
-    .hero {
-      text-align: center;
-      padding: 100px 20px;
-    }
-
-    .hero h1 {
-      font-size: 45px;
-      color: #00bfff;
-    }
-
-    .hero p {
-      font-size: 18px;
-    }
-
-    button {
-      padding: 12px 25px;
-      background-color: #00bfff;
-      color: white;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      margin-top: 15px;
-      font-size: 16px;
-    }
-
-    button:hover {
-      background-color: #008fcc;
-    }
-
-    .section {
-      width: 80%;
+    .container {
+      max-width: 420px;
       margin: auto;
-      padding: 40px 0;
+      margin-top: 60px;
+      padding: 20px;
     }
 
     .card {
-      background-color: #333;
-      padding: 25px;
-      border-radius: 12px;
-      margin-bottom: 20px;
+      background: #1a1a1a;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.4);
     }
 
-    h2 {
+    h1 {
       color: #00bfff;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #ccc;
+      line-height: 1.5;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 5px 10px;
+      border: 1px solid #00bfff;
+      border-radius: 20px;
+      font-size: 12px;
+      color: #00bfff;
+      margin-bottom: 10px;
+    }
+
+    .project {
+      background: #333;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 8px;
+      text-align: left;
+    }
+
+    button {
+      padding: 12px 20px;
+      background: #00bfff;
+      border: none;
+      border-radius: 8px;
+      color: white;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+
+    button:hover {
+      background: #008fcc;
+    }
+
+    /* Floating WhatsApp */
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #00bfff;
+      color: white;
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      font-size: 24px;
     }
   </style>
 </head>
 
 <body>
 
-  <nav>
-    <a href="#">Home</a>
-    <a href="#">Skills</a>
-    <a href="#">Projects</a>
-    <a href="#">Contact</a>
-  </nav>
-
-  <div class="hero">
-    <h1>Hello, I'm Shayan 👋</h1>
-    <p>Beginner Web Developer learning HTML, CSS, and JavaScript.</p>
-
-    <button>Hire Me</button>
-  </div>
-
-  <div class="section">
+  <div class="container">
 
     <div class="card">
-      <h2>Skills</h2>
-      <p>HTML</p>
-      <p>CSS</p>
-      <p>JavaScript (Learning)</p>
-    </div>
 
-    <div class="card">
-  <h2>Projects</h2>
+      <h1>Hi, I'm Shayan 👋</h1>
 
-  <div style="background:#444; padding:15px; border-radius:10px; margin-top:15px;">
-    <h3>Portfolio Website</h3>
-    <p>A beginner portfolio website made with HTML and CSS.</p>
-  </div>
+      <div class="tag">Frontend Web Developer</div>
 
-  <div style="background:#444; padding:15px; border-radius:10px; margin-top:15px;">
-    <h3>Landing Page</h3>
-    <p>Simple responsive landing page project.</p>
-  </div>
+      <p>I build clean and responsive websites using HTML, CSS, and JavaScript.</p>
 
-</div>
+      <h3>Skills</h3>
+      <p>HTML • CSS • JavaScript</p>
 
-    <div class="card">
-      <h2>Contact</h2>
-      <p>Email: shayan@example.com</p>
+      <h3>Projects</h3>
+
+      <div class="project">✔ Portfolio Website</div>
+      <div class="project">✔ Landing Page</div>
+
+      <button onclick="openWhatsApp()">Hire Me on WhatsApp</button>
+
     </div>
 
   </div>
+
+  <!-- Floating WhatsApp Button -->
+  <a class="whatsapp" href="https://wa.me/971567332672" target="_blank">💬</a>
+
+  <script>
+    function openWhatsApp() {
+      window.open("https://wa.me/971567332672", "_blank");
+    }
+  </script>
 
 </body>
 </html>
